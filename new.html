@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online-Shopping Domestic animals/parrot</title>
+    <link rel="stylesheet" href="new.css">
+	<!-- <link rel="icon" href="https://toppng.com/uploads/preview/letter-r-png-r-logo-no-background-11563547034njewnbstc5.png"> -->
+	<link rel="icon" href="l.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <script src="new.js"></script>
+</head>
+<body>
+<header>
+	<nav>
+		<div class="logo">ApnaPashu</div>
+		<div class="menu">
+			<a class="active" href="#home">Home</a>
+			<a href="about.html">About</a>
+			<a href="services.html">Service</a>
+			<a href="#sells">Sells</a>
+		</div>
+        <div class="cont">
+            <!-- <a class="same" href="#">Contact</a> -->
+            <a class="but" href="form1.html"><button type="submit">Log in</button></a>
+        </div>
+	</nav>
+
+
+
+<section id="home">
+<div class="ttt">
+	<div class="t1">
+		<a href="#home"><img src="l.png" alt="" width="100px" height="100px"></a>
+	</div>
+	<div class="t2">
+		<!-- <h1>2222</h1> -->
+		<a href="#cow"><img src="c1.png" alt="" ></a>
+		<a href="#parrot"><img src="parrot/parrot1.png" alt="" ></a>
+		<a href="#buffalo"><img src="buf.png" alt="" ></a>
+		<a href="#dog"><img src="dog.png" alt="" ></a>
+
+	</div>
+
+</div>
+
+</section>
+<div class="ttt2">
+	<div class="title"> 
+		<a href="#"> <SPan style="font-weight: bold; letter-spacing: 3px; font-size: 25px;">APNAPASHU -</SPan> Your Livestock Marketplace</a>
+	</div>
+	<div class="title2">
+		<input type="text" placeholder="Search item"><i class="fa-solid fa-magnifying-glass"></i>
+	</div>
+</div>
+
+</header>
+<!-- start image slider -->
+<div class="slideshow-container"style="width:100%; height: 560px;">
+
+    <div class="mySlides fade" style="width: 100% ;">
+      <div class="numbertext">1 / 5</div>
+      
+      <img src="cow1.jpg" style="width:100%;height: 600px;">
+      <div class="demo1"><input class="demo" type="submit" value="Enquiry"></div>
+      <div class="text">By or sale lifestock online </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+	  <img src="piegon.webp" style="width:100%;height: 600px;">
+      
+      <div class="demo1"><input class="demo" type="submit" value="Enquiry"></div>
+      <div class="text"> Most trust life stock marketplace </div>
+      
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="parrot/parrot5.jpg" style="width:100%;height: 600px;">
+      <div class="demo1"><input class="demo" type="submit" value="Enquiry"></div>
+      <div class="text">Best life at fair price</div>
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <!-- <img src="piegon.webp" style="width:100%;height: 600px;"> -->
+		<img src="buf.jpg" style="width:100%;height: 600px;">
+        <div class="demo1"><input class="demo" type="submit" value="Enquiry"></div>
+        <div class="text">pan india transport facility available</div>
+        
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="sheep.jpg" style="width:100%;height: 600px;">
+        <div class="demo1"><input class="demo" type="submit" value="Enquiry"></div>
+        <div class="text">Wide range of verified cattle</div>
+        
+      </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+</div>
+
+<script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
+	
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+	
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+	
+	function showSlides(n) {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	function showSlides() {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 6000); // Change image every 4 seconds
+	}
+	</script>
+
+
+
+        <!-- end image slider -->
+
+
+<section id="sells">
+	<center>
+		<h1 style="margin-top: 20px; font-size: 35px;">Sells</h1>
+	<hr width="120" color="#00cc99" style="margin: 1% 46%;">
+	</center>
+	<div class="wrapper">
+	<div class="box1">
+		<img src="dogs.jpg">
+		<div class="price">Price: Rs.1699</div>
+	</div>
+		<div>
+		<img src="piegon.webp">
+		<div class="price">Price: Rs.899.00</div>
+	</div>
+		<div>
+		<img src="cow1.jpg">
+		<div class="price">Price: Rs.28899.00</div>
+	</div>
+		<div>
+		<img src="pug.jpg">
+		<div class="price">Price: Rs.1699</div>
+	</div>
+		<div>
+		<img src="buf3.jpeg">
+		<div class="price">Price: Rs.36699</div>
+	</div>
+</div>
+</section>
+
+
+
+<section id="cow">
+	<center>
+	<div class="title" style="margin: 40px; font-size: 25px;"><h1>COW</h1>
+		<hr width="100" color="#00cc99">
+	</div></center>
+	<div class="man-row">
+		<div class="man-box">
+			<img src="cow/cow3.png" width="100px" height="160px">
+				<h2>Sahiwal C2022-0001<br>Rs.28999.00</h2>
+			<!-- <h3>Add to cart </h3> -->
+			<div class="btn3">
+				<a href="productbuy.html"><button>Order now</button></a>
+				<a href="cowdetails.html"><button>Details</button></a>
+			
+			</div>
+		</div>
+		<div class="man-box">
+			<img src="cow/cow1.png" width="100px" height="160px">
+				<h2>Jersey C2022-0002<br>Rs.28999.00</h2>
+			<!-- <h3>Add to cart </h3> -->
+			<div class="btn3">
+				<a href="productbuy.html"><button>Order now</button></a>
+				<a href="#"><button>Details</button></a>
+			
+			</div>
+		</div>
+		<div class="man-box">
+			<img src="cow/cow2.png">
+				<h2>Sahiwal C2022-0003<br>Rs.28999.00</h2>
+			<!-- <h3>Add to cart </h3> -->
+			<div class="btn3">
+				<a href="productbuy.html"><button>Order now</button></a>
+				<a href="#"><button>Details</button></a>
+			
+			</div>
+		</div>
+		<div class="man-box">
+			<img src="cow/cow4.png" width="100px" height="160px">
+				<h2>Jersey C2022-0004<br>Rs.28999.00</h2>
+			<!-- <h3>Add to cart </h3> -->
+			<div class="btn3">
+				<a href="productbuy.html" ><button>Order now</button></a>
+				<a href="#"><button>Details</button></a>
+			
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+<section id="parrot">
+
+	<center><div class="title" style="margin: 60px; font-size: 25px;"><h1>PARROT</h1>
+		<hr width="150" color="#00cc99">
+	</div></center>
+	<div class="man-row">
+		<div class="man-box">
+			<img src="parrot/parrot1.png"  width="100px" height="170px">
+				<h2>Mong parakeet P2022-0001<br>Rs.1699.00</h2>
+			<!-- <h3>Add to cart </h3> -->
+			<div class="btn3">
+				<a href="productbuy.html"><button>Order now</button></a>
+				<a href="parrotdetails.html"><button>Details</button></a>
+			
+			</div>
+		</div>
+		<div class="man-box">
+			<img src="parrot/parrot2.png"  width="100px" height="150px">
+				<h2>Ringneck parakeet P2022-0002<br>Rs.1699.00</h2>
+			<!-- <h3>Add to cart </h3> -->
+			<div class="btn3">
+				<a href="productbuy.html" id="btn5"><button>Order now</button></a>
+				<a href="#"><button>Details</button></a>
+			
+			</div>
+		</div>
+		
+
+		<div class="man-box">
+			<img src="parrot/parrot3.png"  width="100px" height="140px">
+				<h2>Ringneck parakeet P2022-0003<br>Rs.1699.00</h2>
+			<!-- <h3>Add to cart </h3> -->
+			<div class="btn3">
+				<a href="productbuy.html"><button>Order now</button></a>
+				<a href="#"><button>Details</button></a>
+			
+			</div>
+		</div>
+		<div class="man-box">
+			<img src="parrot/parrot4.png">
+				<h2>Mong parakeet P2022-0004<br>Rs.1699.00</h2>
+			<!-- <h3>Add to cart </h3> -->
+			<div class="btn3">
+				<a href="productbuy.html"><button>Order now</button></a>
+				<a href="#"><button>Details</button></a>
+			
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="buffalo">
+	<center><div class="title" style="margin: 60px; font-size: 25px;"><h1>BUFFALO</h1>
+		<hr width="200" color="#00cc99">
+	</div></center>
+	<div class="man-row">
+		<div class="man-box">
+			<img src="buff/buff1.png" width="100px" height="160px">
+				<h2>Murrah buffalo B2022-0001<br>Rs.35999.00</h2>
+			<!-- <h3>Add to cart </h3> -->
+			<div class="btn3">
+				<a href="productbuy.html"><button>Order now</button></a>
+				<a href="buffalodetails.html"><button>Details</button></a>
+			
+			</div>
+		</div>
+		<div class="man-box">
+			<img src="buff/buff2.png">
+				<h2>Murrah buffalo B2022-0002<br>Rs.35999.00</h2>
+			<!-- <h3>Add to cart </h3> -->
+			<div class="btn3">
+				<a href="productbuy.html"><button>Order now</button></a>
+				<a href="#"><button>Details</button></a>
+			
+			</div>
+		</div>
+		<div class="man-box">
+			<img src="buff/buff3.png">
+				<h2>Murrah buffalo B2022-0003<br>Rs.35999.00</h2>
+			<!-- <h3>Add to cart </h3> -->
+			<div class="btn3">
+				<a href="productbuy.html"><button>Order now</button></a>
+				<a href="#"><button>Details</button></a>
+			
+			</div>
+		</div>
+		<div class="man-box">
+			<img src="buff/buff4.png" width="90px" height="160px">
+				<h2>Murrah buffalo B2022-0004<br>Rs.35999.00</h2>
+			<!-- <h3>Add to cart </h3> -->
+			<div class="btn3">
+				<a href="productbuy.html"><button>Order now</button></a>
+				<a href="#"><button>Details</button></a>
+			
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section id="dog">
+	<center><div class="title" style="margin: 60px; font-size: 25px;"><h1>DOG</h1>
+		<hr width="100" color="#00cc99">
+	</div></center>
+	<div class="man-row">
+		<div class="man-box">
+			<img src="dog/chow.png" width="90px" height="140px">
+				<h2>Chow-Chow 2022-0001<br>Rs 1699.99</h2>
+			<!-- <h3>Add to cart </h3> -->
+			<div class="btn3">
+				<a href="productbuy.html"><button>Order now</button></a>
+				<a href="dogdetails.html"><button>Details</button></a>
+			
+			</div>
+		</div>
+		<div class="man-box">
+			<img src="dog/pug.png">
+				<h2>Pug 2022-0002<br>Rs 1699.99</h2>
+			<!-- <h3>Add to cart </h3> -->
+			<div class="btn3">
+				<a href="productbuy.html"><button>Order now</button></a>
+				<a href="#"><button>Details</button></a>
+			
+			</div>
+		</div>
+		<div class="man-box">
+			<img src="dog/lion.png">
+				<h2>Lion-dog 2022-0003<br>Rs 1699.99</h2>
+			<!-- <h3>Add to cart </h3> -->
+			<div class="btn3">
+				<a href="productbuy.html"><button>Order now</button></a>
+				<a href="#"><button>Details</button></a>
+			
+			</div>
+		</div>
+		<div class="man-box">
+			<img src="dog/khana.png" width="90px" height="140px">
+				<h2>Kannan-dog 2022-0004<br>Rs 1699.99</h2>
+			<!-- <h3>Add to cart </h3> -->
+			<div class="btn3">
+				<a href="productbuy.html"><button>Order now</button></a>
+				<a href="#"><button>Details</button></a>
+			
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section id="review">
+	<h2  class="heading">CUSTOMER'S <span>REVIEW</span></h2>
+	<div class="wrapper1">
+	  <div class="box">
+		<i class="fas fa-quote-left quote" style="color: orange;"></i>
+		<div class="content">
+		  <div class="info">
+			<div class="image">
+			  <img src="Images/raushan.jpg" alt="">
+			</div>
+			<div class="name">Raushan gupta</div>
+			<div class="job">Lorem ipsum, dolor sit am eligendi, smet, tempora at? Autem veniam, deleniti officia fuga doloribus nemo!</div>
+			<div class="stars">
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			  <i class="far fa-star"></i>
+			</div>
+		  </div>
+		  
+		</div>
+	  </div>
+	  <div class="box">
+		<i class="fas fa-quote-left quote" style="color: orange;"></i>
+		<div class="content">
+		  <div class="info">
+			<div class="image">
+			  <img src="Images/raushan.jpg" alt="">
+			</div>
+			<div class="name">Raushan gupta</div>
+			<div class="job">Lorem ipsum, dolor sit am eligendi, smet, tempora at? Autem veniam, deleniti officia fuga doloribus nemo!</div>
+			<div class="stars">
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			  <i class="far fa-star"></i>
+			</div>
+		  </div>
+		  
+		</div>
+	  </div>
+	  <div class="box">
+		<i class="fas fa-quote-left quote" style="color: orange;"></i>
+		<div class="content">
+		  <div class="info">
+			<div class="image">
+			  <img src="Images/raushan.jpg" alt="">
+			</div>
+			<div class="name">Raushan gupta</div>
+			<div class="job">Lorem ipsum, dolor sit am eligendi, smet, tempora at? Autem veniam, deleniti officia fuga doloribus nemo!</div>
+			<div class="stars">
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			  <i class="fas fa-star"></i>
+			  <i class="far fa-star"></i>
+			</div>
+		  </div>
+		</div>
+	  </div>
+</section>
+
+
+<section id="footer">
+	<h2>Developed by Raushan Gupta</h2>
+	<img src="Images/icon.png">
+</section>
+
+<footer class="footer">
+	<div class="conta">
+		<div class="row">
+			<div class="footer-col">
+				<h4>company</h4>
+				<ul>
+					<li><a href="#">about us</a></li>
+					<li><a href="#">our services</a></li>
+					<li><a href="#">privacy policy</a></li>
+					<li><a href="#">affiliate program</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>get help</h4>
+				<ul>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">shipping</a></li>
+					<li><a href="#">returns</a></li>
+					<li><a href="#">order status</a></li>
+					<li><a href="#">payment options</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>online shop</h4>
+				<ul>
+					<li><a href="#">cow</a></li>
+					<li><a href="#">buffalo</a></li>
+					<li><a href="#">parrot</a></li>
+					<li><a href="#">dog</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>follow us</h4>
+				<div class="social-links">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br><br>
+	<div  class="footer-bootom">
+		copyright &copy; 2022
+	</div>
+
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+</footer>
+
+
+
+
+<script type="text/javascript">
+	document.getElementById("btn5").onclick = function () {
+		location.href = "productbuy.html";
+	};
+</script>
+
+</body>
+</html>
