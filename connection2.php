@@ -3,7 +3,8 @@ $sname="localhost";
 $uname="root";
 $password="";
 $dbname="project";
-$conn=mysqli_connect($sname,$uname,$password,$dbname);
+$conn=mysqli_connect($sname,$uname,$password,$dbname,3307) or die("not 
+connected");
 // if($conn->connect_error){
 //     die("unable connect".$conn->connect_error);
 // }
@@ -22,16 +23,17 @@ if(isset($_POST['submit'])){
         $query="insert into registration(fname,lname,email,phone,password,cpassword,gender,address) values('$first','$last' ,'$email' ,'$number' ,'$password' ,'$cpassword' ,'$gender' ,'$address')";
         $run=mysqli_query($conn,$query) or die(mysqli_error());
         if($run){
-            echo '<script>alert("your registeration is successfully go home page.")</script>';
+            echo '<script>alert("your registeration is successfully go login page."); window.location.href="form1.html";</script>';
             
         }
         else{
-            echo "form is not submitted";
+            echo '<script>alert("your registeration is not successfully fill again"); window.location.href="RegistrationForm.html";</script>';
         }
 
     }
     else{
         echo "all fields required";
     }
+    
 }
 ?>
