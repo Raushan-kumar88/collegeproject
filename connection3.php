@@ -3,7 +3,8 @@ $sname="localhost";
 $uname="root";
 $password="";
 $dbname="project";
-$conn=mysqli_connect($sname,$uname,$password,$dbname);
+$conn=mysqli_connect($sname,$uname,$password,$dbname,3307) or die("not 
+connected");
 // if($conn->connect_error){
 //     die("unable connect".$conn->connect_error);
 // }
@@ -21,7 +22,7 @@ if(isset($_POST['Proceed'])){
         $query="insert into productbuy(name,phone,ptitle,quantity,date,itemname,address) values('$name','$number' ,'$title' ,'$quantity' ,' $pdate' ,'$product','$address')";
         $run=mysqli_query($conn,$query) or die(mysqli_error());
         if($run){
-            echo '<script>alert("product buy successfully go home page.")</script>';
+          echo'<script>alert("product buy successfully go home page."); window.location.href="index.html";</script>';
             
         }
         else{
